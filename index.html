@@ -63,26 +63,30 @@
   
   <!-- CSS for printing version -->
   <style media="print">
-    body {
-      background-color: #fff;
-      color: #000;
-      margin: 0;
-      padding: 0;
+    /* Ensure there's a margin around the page */
+    @page {
+      margin: 1in;
     }
+
+    /* Remove box shadows and allow container to fill page width */
     .container {
       box-shadow: none;
-      margin: 0;
-      padding: 10px;
-      width: 100%;
-      max-width: none;
+      margin: 0 auto;
+      padding: 0;
+      width: auto;
+      max-width: 100%;
     }
-    header, section {
-      page-break-inside: avoid;
-    }
+
+    /* Display the actual link next to any anchor text in print */
     a:after {
       content: " (" attr(href) ")";
       font-size: 0.9em;
       color: #000;
+    }
+
+    /* Avoid page breaks in the middle of sections */
+    header, section {
+      page-break-inside: avoid;
     }
   </style>
 </head>
@@ -107,7 +111,10 @@
     <section>
       <div class="section-title">Professional Summary</div>
       <p>
-        Innovative Full Stack Engineer and Tech Lead with over a decade of experience designing scalable web applications and robust backend systems. Adept in modern frameworks, microservices architectures, and AI-driven solutions, I excel in remote leadership and digital transformation initiatives. Known for integrating No-Code tools with advanced AI platforms like Cursor AI, I drive forward-thinking, efficient technology solutions.
+        Innovative Full Stack Engineer and Tech Lead with over a decade of experience designing scalable web applications 
+        and robust backend systems. Adept in modern frameworks, microservices architectures, and AI-driven solutions, 
+        I excel in remote leadership and digital transformation initiatives. Known for integrating No-Code tools with 
+        advanced AI platforms like Cursor AI, I drive forward-thinking, efficient technology solutions.
       </p>
     </section>
 

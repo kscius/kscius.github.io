@@ -5,30 +5,29 @@
   <title>Mitzael Serna - CV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Single set of styles for both screen and print -->
   <style>
-    /* Reset & Basics */
+    /* Basic reset for all devices */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
+    /* Screen Styles */
     body {
       font-family: Arial, sans-serif;
-      color: #000; /* Black text is safer for printing */
-      background-color: #fff; /* White background for both screen & print */
+      background-color: #f4f4f4;
+      color: #333;
       line-height: 1.6;
     }
-
-    /* Container with a consistent margin for printed pages */
     .container {
+      background-color: #fff;
       width: 100%;
-      max-width: 800px; /* Reasonable page width */
-      margin: 1in auto; /* Enough space for a standard print margin */
-      padding: 0;       /* No extra padding to avoid messing with print margins */
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    /* Sections & Headings */
     header, section {
       margin-bottom: 20px;
     }
@@ -41,16 +40,14 @@
       margin-bottom: 10px;
       font-weight: normal;
       text-align: center;
-      color: #444; /* Slightly lighter for visual hierarchy */
+      color: #666;
     }
     .section-title {
       font-size: 1.4em;
-      border-bottom: 2px solid #000; /* Solid black for printing clarity */
+      border-bottom: 2px solid #333;
       padding-bottom: 5px;
       margin-bottom: 10px;
     }
-
-    /* Lists */
     ul {
       list-style: none;
       padding-left: 0;
@@ -58,25 +55,46 @@
     ul li {
       margin-bottom: 5px;
     }
-
-    /* Links */
     a {
-      color: #000;
+      color: #333;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
-    /* Show link URLs in parentheses for print or PDF readers that can't click */
-    a:after {
-      content: " (" attr(href) ")";
-      font-size: 0.9em;
-      color: #666;
-    }
-
-    /* Centered contact info */
     .contact-info p, .contact-info a {
       text-align: center;
+    }
+
+    /* Print Styles */
+    @media print {
+      @page {
+        margin: 1in;
+      }
+      body {
+        background-color: #fff;
+        color: #000;
+      }
+      .container {
+        box-shadow: none;
+        width: auto;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+      }
+      /* Display the link URL next to the anchor text */
+      a:after {
+        content: " (" attr(href) ")";
+        font-size: 0.9em;
+        color: #000;
+      }
+      /* Prevent awkward splits */
+      header, section {
+        page-break-inside: avoid;
+      }
+      .section-title {
+        border-color: #000;
+      }
     }
   </style>
 </head>

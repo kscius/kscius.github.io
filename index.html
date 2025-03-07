@@ -4,27 +4,21 @@
   <meta charset="UTF-8">
   <title>Mitzael Serna - CV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <!-- Base CSS for screen -->
   <style>
-    /* Basic reset for all devices */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Screen Styles */
     body {
       font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
       background-color: #f4f4f4;
       color: #333;
-      line-height: 1.6;
     }
     .container {
-      background-color: #fff;
-      width: 100%;
+      width: 90%;
       max-width: 800px;
       margin: 20px auto;
+      background: #fff;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
@@ -32,12 +26,12 @@
       margin-bottom: 20px;
     }
     header h1 {
-      margin-bottom: 5px;
+      margin: 0;
       font-size: 2em;
       text-align: center;
     }
     header h2 {
-      margin-bottom: 10px;
+      margin: 5px 0 10px;
       font-weight: normal;
       text-align: center;
       color: #666;
@@ -50,7 +44,7 @@
     }
     ul {
       list-style: none;
-      padding-left: 0;
+      padding: 0;
     }
     ul li {
       margin-bottom: 5px;
@@ -65,36 +59,34 @@
     .contact-info p, .contact-info a {
       text-align: center;
     }
+  </style>
+  
+  <!-- CSS for printing version -->
+  <style media="print">
+    /* Ensure there's a margin around the page */
+    @page {
+      margin: 1in;
+    }
 
-    /* Print Styles */
-    @media print {
-      @page {
-        margin: 1in;
-      }
-      body {
-        background-color: #fff;
-        color: #000;
-      }
-      .container {
-        box-shadow: none;
-        width: auto;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0;
-      }
-      /* Display the link URL next to the anchor text */
-      a:after {
-        content: " (" attr(href) ")";
-        font-size: 0.9em;
-        color: #000;
-      }
-      /* Prevent awkward splits */
-      header, section {
-        page-break-inside: avoid;
-      }
-      .section-title {
-        border-color: #000;
-      }
+    /* Remove box shadows and allow container to fill page width */
+    .container {
+      box-shadow: none;
+      margin: 0 auto;
+      padding: 0;
+      width: auto;
+      max-width: 100%;
+    }
+
+    /* Display the actual link next to any anchor text in print */
+    a:after {
+      content: " (" attr(href) ")";
+      font-size: 0.9em;
+      color: #000;
+    }
+
+    /* Avoid page breaks in the middle of sections */
+    header, section {
+      page-break-inside: avoid;
     }
   </style>
 </head>
@@ -105,7 +97,9 @@
       <h2>Full Stack Engineer Tech Lead &amp; Back-End Specialist</h2>
       <div class="contact-info">
         <p>Sonora, México</p>
-        <p>Email: <a href="mailto:mitzael.serna@outlook.com">mitzael.serna@outlook.com</a></p>
+        <p>
+          Email: <a href="mailto:mitzael.serna@outlook.com">mitzael.serna@outlook.com</a>
+        </p>
         <p>
           <a href="https://www.linkedin.com/in/mitzaelserna/">LinkedIn</a> | 
           <a href="https://github.com/kscius">GitHub</a> | 
@@ -117,9 +111,9 @@
     <section>
       <div class="section-title">Professional Summary</div>
       <p>
-        Innovative Full Stack Engineer and Tech Lead with over a decade of experience designing scalable web applications
-        and robust backend systems. Adept in modern frameworks, microservices architectures, and AI-driven solutions,
-        I excel in remote leadership and digital transformation initiatives. Known for integrating No-Code tools with
+        Innovative Full Stack Engineer and Tech Lead with over a decade of experience designing scalable web applications 
+        and robust backend systems. Adept in modern frameworks, microservices architectures, and AI-driven solutions, 
+        I excel in remote leadership and digital transformation initiatives. Known for integrating No-Code tools with 
         advanced AI platforms like Cursor AI, I drive forward-thinking, efficient technology solutions.
       </p>
     </section>

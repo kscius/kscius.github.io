@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Mitzael Serna - CV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- You can link to your existing CSS or use the inline styles below -->
+  <!-- Base CSS for screen -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -58,6 +58,31 @@
     }
     .contact-info p, .contact-info a {
       text-align: center;
+    }
+  </style>
+  
+  <!-- CSS for printing version -->
+  <style media="print">
+    body {
+      background-color: #fff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      box-shadow: none;
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+      max-width: none;
+    }
+    header, section {
+      page-break-inside: avoid;
+    }
+    a:after {
+      content: " (" attr(href) ")";
+      font-size: 0.9em;
+      color: #000;
     }
   </style>
 </head>

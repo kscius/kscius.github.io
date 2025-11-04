@@ -1,204 +1,184 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mitzael Serna - CV</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Base CSS for screen -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mitzael Serna — Resume</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+    :root { --text:#222; --muted:#666; --rule:#111; }
+    @media print {
+      @page { margin: 0.6in; }
+      a::after { content: " (" attr(href) ")"; font-size: 0.9em; }
     }
-    .container {
-      width: 90%;
-      max-width: 800px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    html, body {
+      background:#fff; color:var(--text);
+      font:14px/1.35 Georgia, "Times New Roman", Times, serif;
+      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+      margin:0; padding:0;
     }
-    header, section {
-      margin-bottom: 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-      text-align: center;
-    }
-    header h2 {
-      margin: 5px 0 10px;
-      font-weight: normal;
-      text-align: center;
-      color: #666;
-    }
-    .section-title {
-      font-size: 1.4em;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 5px;
-    }
-    a {
-      color: #333;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .contact-info p, .contact-info a {
-      text-align: center;
-    }
-  </style>
-  
-  <!-- CSS for printing version -->
-  <style media="print">
-    /* Ensure there's a margin around the page */
-    @page {
-      margin: 1in;
-    }
-
-    /* Remove box shadows and allow container to fill page width */
-    .container {
-      box-shadow: none;
-      margin: 0 auto;
-      padding: 0;
-      width: auto;
-      max-width: 100%;
-    }
-
-    /* Display the actual link next to any anchor text in print */
-    a:after {
-      content: " (" attr(href) ")";
-      font-size: 0.9em;
-      color: #000;
-    }
-
-    /* Avoid page breaks in the middle of sections */
-    header, section {
-      page-break-inside: avoid;
-    }
+    .page{ max-width:800px; margin:36px auto 64px; padding:0 24px; }
+    .name{ text-align:center; font-size:40px; letter-spacing:.5px; margin:0 0 6px; font-variant-numeric: lining-nums;}
+    .contact{ text-align:center; font-size:13px; color:var(--muted); margin:0; }
+    .contact a{ color:inherit; text-decoration:none; }
+    .rule{ border-bottom:1.6px solid var(--rule); margin:10px 0 18px; }
+    .section{ margin-top:14px; }
+    .section-title{ font-variant-caps:small-caps; letter-spacing:1px; font-weight:700; margin:14px 0 6px; }
+    .section-title + .rule{ margin-top:2px; }
+    .entry{ margin:10px 0 8px; }
+    .entry-header{ display:flex; align-items:baseline; gap:12px; justify-content:space-between; }
+    .role{ font-weight:700; }
+    .org{ font-style:italic; }
+    .right{ text-align:right; white-space:nowrap; color:var(--muted); font-size:13px; }
+    .bullets{ margin:4px 0 0; padding-left:18px; }
+    .bullets li{ margin:2px 0; }
+    .skills-columns{ display:grid; grid-template-columns:1fr 1fr; gap:6px 24px; padding-left:0; margin:6px 0 0; list-style:none; }
+    .skills-columns li{ margin:0 0 2px; }
+    .muted{ color:var(--muted); }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Mitzael Serna</h1>
-      <h2>Full Stack Engineer Tech Lead &amp; Back-End Specialist</h2>
-      <div class="contact-info">
-        <p>Sonora, México</p>
-        <p>
-          Email: <a href="mailto:mitzael.serna@outlook.com">mitzael.serna@outlook.com</a>
-        </p>
-        <p>
-          <a href="https://www.linkedin.com/in/mitzaelserna/">LinkedIn</a> | 
-          <a href="https://github.com/kscius">GitHub</a> | 
-          <a href="https://platzi.com/p/kscius/">Platzi</a>
-        </p>
+  <main class="page">
+    <h1 class="name">Mitzael Serna</h1>
+    <p class="contact">
+      Sonora, Mexico ·
+      <a href="mailto:mitzael.serna@outlook.com">mitzael.serna@outlook.com</a> ·
+      <a href="https://www.linkedin.com/in/mitzaelserna/">linkedin.com/in/mitzaelserna</a> ·
+      <a href="https://github.com/kscius">github.com/kscius</a> ·
+      <a href="https://platzi.com/p/kscius/">platzi.com/p/kscius</a>
+    </p>
+    <div class="rule"></div>
+
+    <!-- EDUCATION NOW FIRST -->
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="rule"></div>
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="role">B.S. in Information Technology</span>
+          </div>
+          <div class="right">2010 – 2014</div>
+        </div>
+        <div class="muted">Universidad Tecnológica de Hermosillo</div>
       </div>
-    </header>
-
-    <section>
-      <div class="section-title">Professional Summary</div>
-      <p>
-        Innovative Full Stack Engineer and Tech Lead with over a decade of experience designing scalable web applications 
-        and robust backend systems. Adept in modern frameworks, microservices architectures, and AI-driven solutions, 
-        I excel in remote leadership and digital transformation initiatives. Known for integrating No-Code tools with 
-        advanced AI platforms like Cursor AI, I drive forward-thinking, efficient technology solutions.
-      </p>
     </section>
 
-    <section>
-      <div class="section-title">Core Competencies</div>
-      <ul>
-        <li><strong>Programming &amp; Frameworks:</strong> Elixir/Phoenix, Node.js/Express, PHP (CodeIgniter, LAMP), JavaScript, TypeScript, Vue.js, Ionic/AngularJS, C#, Java SE, NestJS</li>
-        <li><strong>Database Technologies:</strong> MySQL, PostgreSQL, SQL Server, IndexedDB, Redis, EventStore</li>
-        <li><strong>DevOps &amp; Infrastructure:</strong> Docker, Apache Kafka, GitLab, GitHub, BitBucket, freeNAS, pfSense, Azure Functions, CI/CD pipelines</li>
-        <li><strong>APIs &amp; Integrations:</strong> REST API, Twilio API, Twilio Flex, Azure Functions</li>
-        <li><strong>No-Code &amp; AI Tools:</strong> Airtable, Make, Glide, Apify, OpenAI Products, Cursor IDE AI Agent Mode</li>
-        <li><strong>Collaboration &amp; Thought Processes:</strong> Graph Koledge and Sequential Thinking (MCP)</li>
-        <li><strong>Methodologies:</strong> Microservices architecture, Agile (Jira), DevOps practices, Continuous Integration/Deployment</li>
+    <!-- EXPERIENCE (moved after Education) -->
+    <section class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="rule"></div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="role">Full-Stack Engineer · Tech Lead</span> — <span class="org">Nufi</span>
+          </div>
+          <div class="right">Sep 2024 – Sep 2025</div>
+        </div>
+        <ul class="bullets">
+          <li>Led adoption of No-Code tools and AI-assisted delivery using Cursor.</li>
+          <li>Designed Notepad prompts to standardize flows and accelerate team productivity.</li>
+          <li>Mentored cross-functional teams building scalable, user-centric solutions.</li>
+          <li>Applied MCP approaches (Graph Knowledge & Sequential Thinking) for faster support and robust decisions.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="role">Full-Stack Engineer / Tech Lead</span> — <span class="org">Paystand</span>
+          </div>
+          <div class="right">Feb 2022 – Oct 2025</div>
+        </div>
+        <ul class="bullets">
+          <li>Promoted to Tech Lead (Jan 2025); drove back-end innovation and maintained the Acumatica ERP integration.</li>
+          <li>Improved delivery with AI: internal GPTs, Cursor automation rules, and agent notebooks using MCPs.</li>
+          <li>Designed microservices in Elixir/Phoenix to optimize internal processes.</li>
+          <li>Maintained and expanded NetSuite integrations using TypeScript.</li>
+          <li>Built internal dashboards in Appsmith for proactive monitoring and incident reduction.</li>
+          <li>Containerized services with Docker and managed PostgreSQL/MySQL.</li>
+          <li>Collaborated across teams using GitLab and Jira in agile environments.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="role">Web Developer</span> — <span class="org">Fibotech Technologies</span>
+          </div>
+          <div class="right">Aug 2020 – Jul 2025</div>
+        </div>
+        <ul class="bullets">
+          <li>Transitioned from full-time to hourly model (since 2024).</li>
+          <li>Mobile-first web apps with PHP, Node.js, and Express.</li>
+          <li>Serverless APIs with Azure Functions and caching with Redis.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="role">Web Developer & DevOps Specialist</span> — <span class="org">Judicial Branch of the State of Sonora</span>
+          </div>
+          <div class="right">Jun 2016 – Feb 2020</div>
+        </div>
+        <ul class="bullets">
+          <li>Built a critical app with a custom PHP framework and MySQL.</li>
+          <li>Migrations and CI/CD automation using GitLab and Docker.</li>
+          <li>DevOps strategy for reliable production deployments.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div><span class="role">Additional Roles</span></div>
+          <div class="right muted">2012 – 2019</div>
+        </div>
+        <ul class="bullets">
+          <li>Tuukuul Network — PHP (CodeIgniter) & Ionic (2016–2019).</li>
+          <li>Prisco Desarrollos — Vue.js & PHP (2017).</li>
+          <li>Corporativo Operador de Tecnologías — PHP & Objective-C (2015–2016).</li>
+          <li>Grafav SA de CV — PHP, C#, SQL Server (2015).</li>
+          <li>CIAD — PHP modules supporting research (2012–2013).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="rule"></div>
+      <ul class="skills-columns">
+        <li><strong>Languages & Frameworks:</strong> Elixir/Phoenix, Node.js/Express, PHP (CodeIgniter, LAMP), JavaScript, TypeScript, Vue.js, Ionic/AngularJS, C#, Java SE, NestJS</li>
+        <li><strong>Databases:</strong> MySQL, PostgreSQL, SQL Server, IndexedDB, Redis, EventStore</li>
+        <li><strong>DevOps & Infra:</strong> Docker, Apache Kafka, GitLab/GitHub/Bitbucket, FreeNAS, pfSense, Azure Functions, CI/CD</li>
+        <li><strong>APIs & Integrations:</strong> REST, Twilio API, Twilio Flex, NetSuite</li>
+        <li><strong>No-Code & AI:</strong> Airtable, Make, Glide, Apify, OpenAI, Cursor IDE (Agent Mode)</li>
+        <li><strong>Methods:</strong> Microservices, Agile (Jira), CI/CD, MCP (Graph Knowledge, Sequential Thinking)</li>
       </ul>
     </section>
 
-    <section>
-      <div class="section-title">Professional Experience</div>
-      
-      <h3>Full Stack Engineer Tech Lead - Nufi</h3>
-      <p><em>Sep 2024 - Sept 2025</em></p>
-      <ul>
-        <li>Lead the development and implementation of No-Code tools and AI solutions using Cursor AI.</li>
-        <li>Create and optimize Notepad Prompts to streamline project workflows and enhance team productivity.</li>
-        <li>Guide and mentor cross-functional teams to build scalable, user-centric solutions that align with strategic business goals.</li>
-        <li>Leverage MCP approaches - Graph Knowledge and Sequential Thinking - to support agile project management and robust decision-making.</li>
-      </ul>
-      
-      <h3>Full Stack Engineer / Tech Lead - Paystand</h3>
-      <p><em>Feb 2022 - Oct 2025</em></p>
-      <ul>
-        <li>Promoted to Tech Lead in late January 2025, spearheading back-end innovation and maintaining Acumatia ERP implementation.</li>
-        <li>Working with AI technologies to improve coding processes, generating curated GPTs to help and guide through processes, generating rules for Cursor automatically and creating curated notepad extending Agent use of MCPs</li>
-        <li>Architect and develop microservices with Elixir/Phoenix to streamline internal processes.</li>
-        <li>Enhance and maintain Netsuite integrations using TypeScript.</li>
-        <li>Utilize AppSmith to build internal dashboards that monitor Paystand systems and enable proactive issue resolution before client impact.</li>
-        <li>Create custom GPTs tailored to company workflows, enhancing productivity and supporting AI-driven development pipelines.</li>
-        <li>Leverage Cursor AI to drive project innovation and efficiency across back-end operations.</li>
-        <li>Develop Notepad Prompts and apply MCP methodologies (Graph Koledge and Sequential Thinking) to facilitate effective collaboration and continuous delivery.</li>
-        <li>Utilize Docker for containerized deployments and manage both PostgreSQL and MySQL databases.</li>
-        <li>Foster cross-team collaboration through GitLab and Jira within agile environments.</li>
-      </ul>
-      
-      <h3>Web Developer - Fibotech Technologies</h3>
-      <p><em>Aug 2020 - July 2025</em></p>
-      <ul>
-        <li>Initially engaged full-time; since 2024, transitioned to a project-by-hours model.</li>
-        <li>Develop mobile-optimized web applications with PHP, Node.js, and Express.</li>
-        <li>Implement serverless solutions with Azure Functions to deliver scalable API services.</li>
-        <li>Integrate third-party services (including Twilio) and optimize performance with Redis caching.</li>
-      </ul>
-      
-      <h3>Web Developer &amp; DevOps Specialist - Poder Judicial del Estado de Sonora</h3>
-      <p><em>Jun 2016 - Feb 2020</em></p>
-      <ul>
-        <li>Designed and maintained a critical web application using a custom PHP framework and MySQL.</li>
-        <li>Led infrastructure management initiatives using GitLab and Docker, including successful legacy system migrations.</li>
-        <li>Orchestrated DevOps strategies to ensure smooth transitions from development to production environments.</li>
-      </ul>
-      
-      <h3>Additional Roles</h3>
-      <ul>
-        <li>Web Developer at Tuukuul Network (May 2016 - May 2019): Developed web applications with PHP (CodeIgniter) and IONIC.</li>
-        <li>Web Developer at Prisco Desarrollos de Software (Jul 2017 - Dec 2017): Delivered web solutions using Vue.js and PHP.</li>
-        <li>Web Developer at Corporativo Operador de Tecnologías (Oct 2015 - May 2016): Conducted full stack development with PHP and Objective-C.</li>
-        <li>Web Developer at Grafav SA de CV (Apr 2015 - Oct 2015): Implemented integrated solutions using PHP, C#, and SQL Server.</li>
-        <li>Software Engineer at Desarrollo de Soluciones Tecnológicas (Jul 2013 - Mar 2015): Built Java-based RMI applications and web systems.</li>
-        <li>Web Developer at Centro de Investigación en Alimentación y Desarrollo (Apr 2012 - Apr 2013): Created PHP-based modules to support academic research.</li>
-      </ul>
+    <!-- SUMMARY -->
+    <section class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <div class="rule"></div>
+      <div class="entry">
+        Innovative Full-Stack Engineer and Tech Lead with 10+ years building scalable web apps and robust back-end systems.
+        Expert in microservices, No-Code tooling, and AI-assisted development (Cursor, GPTs). Experienced leading remote teams,
+        driving digital transformation, and automating workflows.
+      </div>
     </section>
 
-    <section>
-      <div class="section-title">Education</div>
-      <p>Engineering in IT</p>
-      <p>Hermosillo Technological University, 2010 - 2014</p>
-    </section>
-
-    <section>
-      <div class="section-title">Additional Information</div>
-      <ul>
-        <li>Remote Work: Actively seeking exclusively remote opportunities.</li>
-        <li>Professional Outlook: Passionate about leveraging emerging technologies and AI-driven tools to drive continuous improvement and innovation in digital solutions.</li>
+    <!-- EXTRA -->
+    <section class="section">
+      <h2 class="section-title">Additional Information</h2>
+      <div class="rule"></div>
+      <ul class="bullets">
+        <li>Open to fully-remote roles.</li>
+        <li>Motivated to incorporate emerging tech and AI-assisted flows for continuous improvement.</li>
       </ul>
     </section>
-  </div>
+  </main>
 </body>
 </html>

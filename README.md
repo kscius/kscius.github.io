@@ -18,7 +18,6 @@
   <a href="https://linkedin.com/in/mitzaelserna"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:mitzael.serna@outlook.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/kscius"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://www.upwork.com/o/profiles/users/~017ef7fb49a50428fb/"><img src="https://img.shields.io/badge/Upwork-14A800?style=flat-square&logo=upwork&logoColor=white" alt="Upwork" /></a>
   <img src="https://img.shields.io/badge/Sonora,_Mexico-6b7280?style=flat-square&logo=googlemaps&logoColor=white" alt="Location" />
 </p>
 

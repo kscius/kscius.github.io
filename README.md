@@ -18,6 +18,8 @@
   <a href="https://linkedin.com/in/mitzaelserna"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:mitzael.serna@outlook.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/kscius"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://platzi.com/p/kscius/"><img src="https://img.shields.io/badge/Platzi-98CA3F?style=flat-square&logo=platzi&logoColor=white" alt="Platzi" /></a>
+  <a href="https://cursor.com/@kscius"><img src="https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor&logoColor=white" alt="Cursor" /></a>
   <img src="https://img.shields.io/badge/Sonora,_Mexico-6b7280?style=flat-square&logo=googlemaps&logoColor=white" alt="Location" />
 </p>
 
@@ -30,6 +32,8 @@
 This repository hosts the source for my **personal resume site** — a single static page (`index.html`) with my professional summary, skills, and work history, published via GitHub Pages.
 
 It is not an application or open-source project. The live CV lives at **[kscius.github.io](https://kscius.github.io)**.
+
+**Profiles:** [LinkedIn](https://www.linkedin.com/in/mitzaelserna) · [GitHub](https://github.com/kscius) · [Platzi](https://platzi.com/p/kscius/) · [Cursor](https://cursor.com/@kscius)
 
 ---
 
@@ -90,9 +94,10 @@ It is not an application or open-source project. The live CV lives at **[kscius.
 | **Experience** | 13+ years in full-stack development &amp; tech leadership |
 | **Focus** | Web platforms, microservices, ML/AI systems |
 | **Published from** | `index.html` on the `main` branch |
+| **Profiles** | [LinkedIn](https://www.linkedin.com/in/mitzaelserna) · [GitHub](https://github.com/kscius) · [Platzi](https://platzi.com/p/kscius/) · [Cursor](https://cursor.com/@kscius) |
 
 <br>
 
-**[→ Open the live resume](https://kscius.github.io)**
+**[→ Open the live resume](https://kscius.github.io)** · **[→ Cursor profile](https://cursor.com/@kscius)**
 
 </div>

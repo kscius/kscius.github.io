@@ -91,7 +91,7 @@ It is not an application or open-source project. The live CV lives at **[kscius.
 
 | | |
 | :--- | :--- |
-| **Experience** | 13+ years in full-stack development &amp; tech leadership |
+| **Experience** | 14+ years in full-stack development &amp; tech leadership |
 | **Focus** | Web platforms, microservices, ML/AI systems |
 | **Published from** | `index.html` on the `main` branch |
 | **Profiles** | [LinkedIn](https://www.linkedin.com/in/mitzaelserna) · [GitHub](https://github.com/kscius) · [Platzi](https://platzi.com/p/kscius/) · [Cursor](https://cursor.com/@kscius) |

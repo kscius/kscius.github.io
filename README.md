@@ -2,7 +2,7 @@
 
 # Mitzael Serna
 
-### Senior Full-Stack ML Engineer &amp; Tech Lead
+### Senior Software Engineer · Full-Stack ML Engineer &amp; Tech Lead
 
 <p>
   <em>14+ years architecting scalable web applications, microservices, and AI-powered platforms.</em>

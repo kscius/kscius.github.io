@@ -90,7 +90,12 @@
     :root { --text:#222; --muted:#666; --rule:#111; }
     @media print {
       @page { margin: 0.6in; }
-      a::after { content: " (" attr(href) ")"; font-size: 0.9em; }
+      .skip-link { display: none !important; }
+      /* Append full URLs only for http(s) links outside the contact line
+         (contact text already shows usable profile paths; mailto stays clean). */
+      a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.9em; }
+      .contact a[href^="http"]::after { content: none; }
+      .entry { break-inside: avoid; page-break-inside: avoid; }
     }
     html, body {
       background:#fff; color:var(--text);
